@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:background="@drawable/popup_bg"
+    android:padding="16dp"
+    >
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_notebook_close"
+        android:layout_alignParentEnd="true"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/book_blue"
+        android:id="@+id/add_notebook_color"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_notebook_name"
+        android:layout_below="@id/add_notebook_color"
+        android:hint="enter notebook name"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/colors"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/add_notebook_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/notebook_color_blue"
+            android:background="@drawable/oval_blue"
+            android:layout_marginEnd="10dp"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/notebook_color_green"
+            android:background="@drawable/oval_green"
+            android:layout_marginEnd="10dp"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/notebook_color_orange"
+            android:background="@drawable/oval_orange"
+            android:layout_marginEnd="10dp"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/notebook_color_red"
+            android:background="@drawable/oval_red"
+            android:layout_marginEnd="10dp"
+            />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_notebook_btn"
+        android:background="@drawable/save"
+        android:layout_below="@id/colors"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+</RelativeLayout>

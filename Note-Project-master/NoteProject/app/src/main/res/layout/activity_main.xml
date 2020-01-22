@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/page_title"
+        android:background="@drawable/title"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notebooks"
+        android:layout_below="@id/page_title"
+        android:background="@drawable/note_books"
+        android:layout_marginTop="16dp"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_notebook"
+        android:background="@drawable/add_notebook"
+        android:layout_below="@id/notebooks"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_notebook_footer"
+        android:text="create\n Notebook"
+        android:layout_below="@id/add_notebook"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="10dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notebooks_list"
+        android:layout_toEndOf="@id/add_notebook"
+        android:layout_marginStart="8dp"
+        android:layout_alignTop="@id/add_notebook"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notes"
+        android:background="@drawable/notes"
+        android:layout_below="@id/add_notebook_footer"
+        android:layout_marginTop="22dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_note"
+        android:text="show more"
+        android:textColor="@color/colorPrimary"
+        android:background="#ffff"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/notes"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/notes_list"
+        android:layout_below="@id/notes"
+        android:layout_marginTop="15dp"
+        />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/add_btn"
+        android:background="@drawable/add_icon"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        />
+
+</RelativeLayout>
